@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const PostCard = ({ posts }) => {
 
@@ -26,6 +27,8 @@ const PostCard = ({ posts }) => {
                 <p className="text-slate-400 leading-relaxed text-sm">
                     {body}
                 </p>
+
+                <Link href={`/posts/${id}`} className="text-red-800">Check details</Link>
 
             </div>
         </div>
