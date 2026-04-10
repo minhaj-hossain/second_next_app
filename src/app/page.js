@@ -23,7 +23,9 @@ export default function Home() {
 
 
       <div>
-        <Link className={`btn ${pathname === '/posts' ? 'btn-accent' : ''}`} href={'/posts'}>Posts</Link>
+        <Link className={`btn ${pathname === '/posts' ? 'btn-primary' : ''}`} href={'/posts'}>Posts</Link>
+
+        <Link className={`btn  ${pathname === '/users' ? 'btn-primary' : ''}`} href={'/users'}>Users</Link>
       </div>
     </div>
   );
